@@ -178,17 +178,6 @@ public class Passenger : IObject, IPerson
     {
         PassengerFactory.SetData(this, data);
     }
-
-    public void SetData(string[] data)
-    {
-        ID = ulong.Parse(data[1]);
-        Name = data[2];
-        Age = ulong.Parse(data[3]);
-        Phone = data[4];
-        Email = data[5];
-        Class = data[6];
-        Miles = ulong.Parse(data[7]);
-    }
 }
 public class Cargo : IObject
 {
